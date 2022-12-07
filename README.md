@@ -6,13 +6,6 @@
 
 "To-do list" is a tool that helps to organize your day. It simply lists the things that you need to do and allows you to mark them as complete. You will build a simple website that allows for doing that, and you will do it using ES6 and Webpack!
 
-<div align="center">
-
-
-  <h3><b>Microverse</b></h3>
-
-</div>
-
 <!-- TABLE OF CONTENTS -->
 
 # 📗 Table of Contents
@@ -36,7 +29,7 @@
     <th style="border: 1px solid black;">Desktop Version</th>
   </tr>
   <tr style="border: 2px solid black;">
-  <td style="border: 1px solid black;"><img src="/images/DesktopVersion.jpg" alt="Desktop Version" width="400"  height="200" /></td>
+  <td style="border: 1px solid black;"><img src="/images/DesktopVersionLIST.jpg" alt="Desktop Version" width="400"  height="200" /></td>
   </tr>
 </table>
 **To-do list**  is a tool that helps to organize your day. It simply lists the things that you need to do and allows you to mark them as complete. You will build a simple website that allows for doing that, and you will do it using ES6 and Webpack! 
@@ -44,10 +37,8 @@
 Here are some features of the page:
 
 <ul>
-  <li>Feature 1</li>
-  <li>Feature 2</li>
-  <li>Feature 3</li>
-  <li>Feature 4</li>
+  <li>Type content to be added</li>
+  <li>Select items on the list/li>
 </ul>
 
 
@@ -80,9 +71,11 @@ Here are some features of the page:
 
 - On the terminal run this command git clone [https://github.com/Lucash2022/To-Do-list.git]
 
-- Go to the repository folder using command prompt cd Awesome_Book.
+- Go to the repository folder using command prompt cd To_Do_List
 
 - Install the dev dependencies for linters run npm install.
+
+- To start run npm start
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
@@ -90,11 +83,11 @@ Here are some features of the page:
 
 In order to run this project you need:
 
--Google chrome
+- A working browser application (Google chrome, Mozilla Fire fox, Microsoft edge ...)
 
--Internet Explorer
+-VSCode or any other equivalent code editor
 
--Any broswer
+-Node Package Manager (For running, debuging, or installing dependancies to be used)
 
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>

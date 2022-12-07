@@ -1,5 +1,5 @@
 {
-  "name": "webpack_setup",
+  "name": "To_Do_List",
   "version": "1.0.0",
   "description": "",
   "private": true,
@@ -12,15 +12,15 @@
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/Lucash2022/webpack_setup.git"
+    "url": "git+https://github.com/Lucash2022/To_Do_List.git"
   },
   "keywords": [],
   "author": "",
   "license": "ISC",
   "bugs": {
-    "url": "https://github.com/Lucash2022/webpack_setup/issues"
+    "url": "https://github.com/Lucash2022/To_Do_List/issues"
   },
-  "homepage": "https://github.com/Lucash2022/webpack_setup#readme",
+  "homepage": "https://github.com/Lucash2022/To_Do_List#readme",
   "devDependencies": {
     "css-loader": "^6.7.2",
     "express": "^4.18.2",

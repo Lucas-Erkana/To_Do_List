@@ -144,7 +144,7 @@ Clone this repository to your desired folder:
 
 Contributions, issues, and feature requests are welcome!
 
-Feel free to check the [issues page](https://github.com/Lucash2022/Awesome_Book/issues/2).
+Feel free to check the [issues page](https://github.com/Lucash2022/To_Do_List/issues).
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 

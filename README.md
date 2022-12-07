@@ -100,7 +100,7 @@ Clone this repository to your desired folder:
 
 - On the terminal run this command git clone [https://github.com/Lucash2022/To-Do-list.git].git
 
-- Go to the repository folder using command prompt cd [To-Do-List].
+- Go to the repository folder using command prompt cd To-Do-List
 
 - Install the dev dependencies for linters run npm install.
 --->

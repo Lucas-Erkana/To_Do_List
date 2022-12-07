@@ -84,9 +84,9 @@ Here are some features of the page:
 
 - Open the command prompt in the created directory.
 
-- On the terminal run this command git clone [https://github.com/Lucash2022/To-Do-list.git]
+- On the terminal run this command git clone [https://github.com/Lucash2022/To_Do_List.git]
 
-- Go to the repository folder using command prompt cd Awesome_Book.
+- Go to the repository folder using command prompt cd To_Do_List.git
 
 - Install the dev dependencies for linters run npm install.
 
@@ -111,9 +111,9 @@ Clone this repository to your desired folder:
 
 - Open the command prompt in the created directory.
 
-- On the terminal run this command git clone [https://github.com/Lucash2022/To-Do-list.git].git
+- On the terminal run this command git clone https://github.com/Lucash2022/To_Do_List.git
 
-- Go to the repository folder using command prompt cd [To-Do-List].
+- Go to the repository folder using command prompt cd To_Do_List
 
 - Install the dev dependencies for linters run npm install.
 --->

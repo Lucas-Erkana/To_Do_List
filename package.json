@@ -1,0 +1,37 @@
+{
+  "name": "webpack_setup",
+  "version": "1.0.0",
+  "description": "",
+  "private": true,
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "watch": "webpack --watch",
+    "start": "webpack serve --open",
+    "server": "node server.js",
+    "build": "webpack"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Lucash2022/webpack_setup.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Lucash2022/webpack_setup/issues"
+  },
+  "homepage": "https://github.com/Lucash2022/webpack_setup#readme",
+  "devDependencies": {
+    "css-loader": "^6.7.2",
+    "express": "^4.18.2",
+    "html-webpack-plugin": "^5.5.0",
+    "style-loader": "^3.3.1",
+    "webpack": "^5.75.0",
+    "webpack-cli": "^5.0.1",
+    "webpack-dev-middleware": "^6.0.1",
+    "webpack-dev-server": "^4.11.1"
+  },
+  "dependencies": {
+    "lodash": "^4.17.21"
+  }
+}

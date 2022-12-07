@@ -83,7 +83,7 @@ Here are some features of the page:
 
 In order to run this project you need:
 
-- A working browser application (Google chrome, Mozilla Fire fox, Microsoft edge ...)
+-A working browser application (Google chrome, Mozilla Fire fox, Microsoft edge ...)
 
 -VSCode or any other equivalent code editor
 
@@ -103,6 +103,8 @@ Clone this repository to your desired folder:
 - Go to the repository folder using command prompt cd To-Do-List
 
 - Install the dev dependencies for linters run npm install.
+
+- To start run npm start
 --->
 
 

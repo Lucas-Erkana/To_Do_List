@@ -1,80 +1,138 @@
-
 * {
-  box-sizing: border-box;
-  font-family: NoyhRW01-Medium, sans-serif;
-}
-
-ul {
-  list-style-type: none;
-  background-color: white;
-  box-shadow: 2px 2px 5px 1px rgba(0, 0, 0, 0.2);
-  padding: 10px;
+  margin: 0;
+  padding: 0;
 }
 
 body {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
   background-color: #f6f6f6;
 }
 
-li {
-  border-bottom: 1px solid rgb(237, 236, 236);
-  padding: 10px;
+.container {
+  background-color: white;
+  width: 360px;
+  margin: 190px auto;
   display: flex;
-  justify-content: space-between;
-  margin-right: -10px;
-  margin-left: -10px;
-}
-
-li input {
-  border: none;
-  outline: none;
-  margin-right: 20px;
-}
-
-li input:focus {
-  border: none;
-  outline: none;
-}
-
-li input::placeholder {
-  font-style: italic;
-}
-
-li input:focus::placeholder {
-  color: transparent;
-}
-
-li a {
-  text-decoration: none;
-  color: inherit;
-  opacity: 0.4;
-}
-
-.clear-item {
-  display: flex;
-  align-items: center;
-  background-color: rgb(248, 246, 246);
-  border-bottom: none;
+  flex-direction: column;
   justify-content: center;
-  margin-right: -10px;
-  margin-left: -10px;
-  margin-bottom: -10px;
+  padding: 20px;
 }
 
-i {
-  opacity: 0.4;
+.to-do-list {
+  width: 100%;
+}
+
+table {
+  width: 100%;
+  background-color: white;
+}
+
+table a {
+  text-decoration: none;
+}
+
+table td {
+  width: 23.33%;
+}
+
+table td .paragraph {
+  color: red;
+}
+
+.strike-through {
+  font-style: italic;
+  text-decoration: line-through;
+}
+
+table td img {
+  width: 30px;
+  margin: auto;
+}
+
+form {
+  display: flex;
+  position: relative;
+}
+
+.completedBtn {
+  width: 100%;
+  height: 40px;
+  border: none;
+  margin-top: 20px;
+  color: rgb(82, 75, 75);
+  cursor: pointer;
+}
+
+#addBtn {
+  background-color: white;
+  border: none;
+  position: absolute;
+  left: 320px;
+  height: 40px;
+  margin: auto;
+}
+
+.mainH {
+  font-size: 20px;
+}
+
+.threeDotsImg {
+  opacity: 0.5;
   cursor: move;
 }
 
-section {
-  width: 50%;
+#returnImg {
+  cursor: pointer;
 }
 
-.date1 {
-  text-align: end;
-  padding: 20px 100px;
-  font-size: 16px;
-  font-weight: bold;
+#addBtn img {
+  width: 20px;
+}
+
+#todo-input {
+  width: 100%;
+  margin-bottom: 10px;
+  border: none;
+  height: 40px;
+}
+
+.clear-completed {
+  width: 100%;
+  height: 40px;
+  border: none;
+  color: rgb(64, 60, 60);
+}
+
+.edit {
+  width: 310px;
+  padding: 0 20px 0 5px;
+  margin: auto;
+  left: -25px;
+  right: 0;
+  position: absolute;
+  height: 40px;
+  border: none;
+}
+
+.edit:focus {
+  outline: none;
+}
+
+.hide {
+  display: none;
+}
+
+.editItem {
+  display: none;
+}
+
+input:focus {
+  outline: none;
+}
+
+input::placeholder {
+  font-style: italic;
+}
+
+td p {
+  margin-left: 0;
 }

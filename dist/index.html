@@ -1,1 +1,48 @@
-<!doctype html><html lang="en"><head><meta charset="UTF-8"><meta http-equiv="X-UA-Compatible" content="IE=edge"><meta name="viewport" content="width=device-width,initial-scale=1"><script src="https://kit.fontawesome.com/9c25278351.js" crossorigin="anonymous"></script><title>Webpack App</title><script defer="defer" src="/runtime.bundle.js"></script><script defer="defer" src="/index.bundle.js"></script></head><body><header><h1>Webpack App</h1></header><section><ul class="todo-list"><li>Today's TO DO</li><li class="list-item"><input class="item-input" id="desc-input" placeholder="Add to your list ..."/></li></ul></section></body></html>
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>To-Do List</title>
+  <script defer src="main.6b5892c778aa84877b77.js"></script></head>
+  <body>
+    <main>
+      
+      <div class="container">
+        <span class="date1"></span>
+        <div class="input-container">
+          
+          <p class="mainH">Today's to do </p> 
+          <div>
+            <form action="#">
+              <input
+                id="todo-input"
+                type="text"
+                placeholder="Add to your list"
+                required
+              />
+              <button type="submit" id="addBtn">
+                <img
+                  class="returnImg"
+                  id="returnImg"
+                  src="./assets/return.svg"
+                  alt="returnImg"
+                />
+              </button>
+            </form>
+          </div>
+
+          <div class="to-do-list" id="to-do-container">
+            <table>
+              <thead></thead>
+              <tbody class="tbody" id="tbody"></tbody>
+            </table>
+            <button type="button" id="completedBtn" class="completedBtn">
+              Clear all completed.
+            </button>
+          </div>
+        </div>
+      </div>
+    </main>
+  </body>
+</html>

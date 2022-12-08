@@ -1,4 +1,4 @@
-class Storage {
+class Store {
     static getToDo() {
       let todoL;
       if (!localStorage.getItem('todoL')) {

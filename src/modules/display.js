@@ -1,7 +1,6 @@
 import Store from './store.js';
 import returnImg from '../assets/return.svg';
 import threeDots from '../assets/threeDots.svg';
-import trashCan from '../assets/trashCan.svg';
 
 document.getElementById('returnImg').src = returnImg;
 class DomToDo {

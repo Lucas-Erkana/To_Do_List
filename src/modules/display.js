@@ -1,6 +1,7 @@
 import Store from './store.js';
 import returnImg from '../assets/return.svg';
 import threeDots from '../assets/threeDots.svg';
+import trashCan from '../assets/trashCan.svg';
 
 document.getElementById('returnImg').src = returnImg;
 class DomToDo {
@@ -22,7 +23,7 @@ class DomToDo {
     <td><p class='paragragh strike-through'> ${todo.description}</p><td>
     <td class='hide'>${todo.id}</td>
     <td><img class='threeDotsImg' src="${threeDots}" alt="Vertical Three Dots" /></td>
-    <td><a href="#" class='delete'>🗑</a><td>
+    <td><td><a href="#" class='delete'>🗑</a><td><td>
     `;
     } else {
       row.innerHTML = `
@@ -30,9 +31,7 @@ class DomToDo {
     <td><p class='paragragh'> ${todo.description}</p><td>
     <td class='hide'>${todo.id}</td>
     <td><img class='threeDotsImg' src="${threeDots}" alt="Vertical Three Dots" /></td>
-
     <td><a href="#" class='delete'>🗑</a><td>
-
     `;
     }
 

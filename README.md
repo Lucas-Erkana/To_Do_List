@@ -56,7 +56,7 @@ Here are some features of the page:
 
 ## 🚀 Live Demo <a name="live-demo"></a>
 
-[To Do list: list structure](https://lucash2022.github.io/To_Do_List/)
+[To Do list: list structure](https://lucash2022.github.io/To_Do_List/dist/)
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 

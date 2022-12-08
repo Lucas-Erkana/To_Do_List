@@ -6,15 +6,6 @@
 
 "To-do list" is a tool that helps to organize your day. It simply lists the things that you need to do and allows you to mark them as complete. You will build a simple website that allows for doing that, and you will do it using ES6 and Webpack!
 
-<div align="center">
-
-  <img src="/images/murple_logo.png" alt="logo" width="140"  height="auto" /> <!---Organization logo-->
-  <br/>
-
-  <h3><b>Microverse</b></h3>
-
-</div>
-
 <!-- TABLE OF CONTENTS -->
 
 # 📗 Table of Contents
@@ -36,13 +27,9 @@
 <table style="border: 2px solid black;">
   <tr>
     <th style="border: 1px solid black;">Desktop Version</th>
-    <th>Mobile Version</th>
-     <th style="border: 1px solid black;">Mobile Version Menu</th>
   </tr>
   <tr style="border: 2px solid black;">
-  <td style="border: 1px solid black;"><img src="/images/DesktopVersion.jpg" alt="Desktop Version" width="400"  height="200" /></td>
-  <td><img src="/images/MobileVersion.jpg" alt="Mobile Version" width="150"  height="200" /></td>
-   <td><img src="/images/MobileVersionMenu.jpg" alt="Mobile Version" width="150"  height="200" /></td>
+  <td style="border: 1px solid black;"><img src="/images/DesktopVersionLIST.jpg" alt="Desktop Version" width="400"  height="200" /></td>
   </tr>
 </table>
 **To-do list**  is a tool that helps to organize your day. It simply lists the things that you need to do and allows you to mark them as complete. You will build a simple website that allows for doing that, and you will do it using ES6 and Webpack! 
@@ -50,10 +37,8 @@
 Here are some features of the page:
 
 <ul>
-  <li>Feature 1</li>
-  <li>Feature 2</li>
-  <li>Feature 3</li>
-  <li>Feature 4</li>
+  <li>Type content to be added</li>
+  <li>Select items on the list/li>
 </ul>
 
 
@@ -71,7 +56,7 @@ Here are some features of the page:
 
 ## 🚀 Live Demo <a name="live-demo"></a>
 
-[To Do list: list structure](link to deployed website)
+[To Do list: list structure](https://lucash2022.github.io/To_Do_List/)
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
@@ -86,9 +71,12 @@ Here are some features of the page:
 
 - On the terminal run this command git clone [https://github.com/Lucash2022/To_Do_List.git]
 
-- Go to the repository folder using command prompt cd To_Do_List.git
+- Go to the repository folder using command prompt cd To_Do_List
+
 
 - Install the dev dependencies for linters run npm install.
+
+- To start run npm start
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
@@ -96,11 +84,11 @@ Here are some features of the page:
 
 In order to run this project you need:
 
--Google chrome
+-A working browser application (Google chrome, Mozilla Fire fox, Microsoft edge ...)
 
--Internet Explorer
+-VSCode or any other equivalent code editor
 
--Any broswer
+-Node Package Manager (For running, debuging, or installing dependancies to be used)
 
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
@@ -116,6 +104,8 @@ Clone this repository to your desired folder:
 - Go to the repository folder using command prompt cd To_Do_List
 
 - Install the dev dependencies for linters run npm install.
+
+- To start run npm start
 --->
 
 
@@ -154,7 +144,7 @@ Clone this repository to your desired folder:
 
 Contributions, issues, and feature requests are welcome!
 
-Feel free to check the [issues page](https://github.com/Lucash2022/Awesome_Book/issues/2).
+Feel free to check the [issues page](https://github.com/Lucash2022/To_Do_List/issues).
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 

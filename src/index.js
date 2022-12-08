@@ -7,7 +7,7 @@ import setTime from './modules/dates.js';
 setTime();
 document.addEventListener('DOMContentLoaded', DomToDo.displayToDo);
 document.getElementById('completedBtn').addEventListener('click', () => {
-  Store.removeCompleted();
+  Store.finalRemoval();
 });
 
 document.querySelector('form').addEventListener('submit', (e) => {

@@ -112,7 +112,7 @@ class Store {
           input.value = editItem;
           input.classList.add('edit');
 
-          input.addEventListener('keypress', () => {
+          input.addEventListener('change', () => {
             editPara.textContent = input.value;
             todo.description = input.value;
             localStorage.setItem('todoL', JSON.stringify(todoL));

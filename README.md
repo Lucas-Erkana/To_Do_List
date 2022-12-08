@@ -32,10 +32,14 @@ Project 2: In this project, I will implement the CRUD (create, read, update, del
 # 📖 Project name<a name="about-project"></a> <!---Project title-->
 <table style="border: 2px solid black;">
   <tr>
-    <th style="border: 1px solid black;">Desktop Version</th>
+    <th style="border: 1px solid black;">Empty List</th>
+    <th style="border: 1px solid black;">Filled List</th>
+     <th style="border: 1px solid black;">Delete List</th>
   </tr>
   <tr style="border: 2px solid black;">
+  <td style="border: 1px solid black;"><img src="/images/DesktopVersionADD.jpg" alt="Desktop Version" width="400"  height="200" /></td>
   <td style="border: 1px solid black;"><img src="/images/DesktopVersionLIST.jpg" alt="Desktop Version" width="400"  height="200" /></td>
+  <td style="border: 1px solid black;"><img src="/images/DesktopVersionDEL.jpg" alt="Desktop Version" width="400"  height="200" /></td>
   </tr>
 </table>
 **To-do list**  is a tool that helps to organize your day. It simply lists the things that you need to do and allows you to mark them as complete. You will build a simple website that allows for doing that, and you will do it using ES6 and Webpack! 

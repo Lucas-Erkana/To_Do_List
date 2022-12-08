@@ -62,6 +62,11 @@ form {
   cursor: pointer;
 }
 
+button:hover {
+  color: white;
+  background: red;
+}
+
 #addBtn {
   background-color: white;
   border: none;
@@ -77,7 +82,7 @@ form {
 
 .threeDotsImg {
   opacity: 0.5;
-  cursor: move;
+  cursor: pointer;
 }
 
 #returnImg {

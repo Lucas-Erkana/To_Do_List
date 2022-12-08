@@ -10,6 +10,7 @@ Project 1:In this project, I will build a simple HTML list of To Do tasks. The l
 
 Project 2: In this project, I will implement the CRUD (create, read, update, delete) methods. All the elements of the user interface will be fully functional and your application will be completed.
 
+Project 3:In this project, I will add some functionality to your application to make it interactive. The user will also be able to mark task completion by selecting the corresponding checkbox (or undo it by unchecking the checkbox). The updated tasks list will be stored in local storage.
 
 
 <!-- TABLE OF CONTENTS -->
@@ -48,7 +49,10 @@ Here are some features of the page:
 
 <ul>
   <li>Type content to be added</li>
-  <li>Select items on the list/li>
+  <li>Select items on the list</li>
+   <li>Add items to listt</li>
+   <li>Edit items in list</li>
+  <li>Delete items from list</li>
 </ul>
 
 

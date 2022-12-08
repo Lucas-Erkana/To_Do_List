@@ -57,7 +57,7 @@ class Store {
     return todoL;
   }
 
-  static removeCompleted() {
+  static finalRemoval() {
     const todoL = Store.getToDo();
 
     const notCompleted = todoL.filter((x) => x.completed === false);

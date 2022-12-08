@@ -1,7 +1,7 @@
 import './style.css';
 import DomToDo from './modules/domDisplay.js';
-import CreateToDo from './modules/todoConstruct.js';
-import Storage from './modules/store.js';
+import CreateToDo from './modules/constructor.js';
+import Store from './modules/store.js';
 
 document.addEventListener('DOMContentLoaded', DomToDo.displayToDo);
 document.getElementById('completedBtn').addEventListener('click', () => {

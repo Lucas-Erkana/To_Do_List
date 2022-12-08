@@ -1,7 +1,8 @@
 import './style.css';
+import setTime from './modules/dates.js';
 
 const container = document.querySelector('.todo-list');
-
+setTime();
 const list = [{
   description: 'brush teeth',
   completed: true,

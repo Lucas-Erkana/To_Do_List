@@ -6,6 +6,12 @@
 
 "To-do list" is a tool that helps to organize your day. It simply lists the things that you need to do and allows you to mark them as complete. You will build a simple website that allows for doing that, and you will do it using ES6 and Webpack!
 
+Project 1:In this project, I will build a simple HTML list of To Do tasks. The list will be styled according to the specifications listed later in this lesson. This simple web page will be built using webpack and served by a webpack dev server.
+
+Project 2: In this project, I will implement the CRUD (create, read, update, delete) methods. All the elements of the user interface will be fully functional and your application will be completed.
+
+
+
 <!-- TABLE OF CONTENTS -->
 
 # 📗 Table of Contents
@@ -26,10 +32,14 @@
 # 📖 Project name<a name="about-project"></a> <!---Project title-->
 <table style="border: 2px solid black;">
   <tr>
-    <th style="border: 1px solid black;">Desktop Version</th>
+    <th style="border: 1px solid black;">Empty List</th>
+    <th style="border: 1px solid black;">Filled List</th>
+     <th style="border: 1px solid black;">Delete List</th>
   </tr>
   <tr style="border: 2px solid black;">
+  <td style="border: 1px solid black;"><img src="/images/DesktopVersionADD.jpg" alt="Desktop Version" width="400"  height="200" /></td>
   <td style="border: 1px solid black;"><img src="/images/DesktopVersionLIST.jpg" alt="Desktop Version" width="400"  height="200" /></td>
+  <td style="border: 1px solid black;"><img src="/images/DesktopVersionDEL.jpg" alt="Desktop Version" width="400"  height="200" /></td>
   </tr>
 </table>
 **To-do list**  is a tool that helps to organize your day. It simply lists the things that you need to do and allows you to mark them as complete. You will build a simple website that allows for doing that, and you will do it using ES6 and Webpack! 
@@ -56,7 +66,9 @@ Here are some features of the page:
 
 ## 🚀 Live Demo <a name="live-demo"></a>
 
+
 [To Do list: list structure](https://lucash2022.github.io/To_Do_List/dist/)
+
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 

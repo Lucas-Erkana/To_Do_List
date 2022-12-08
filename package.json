@@ -1,8 +1,8 @@
 {
   "name": "to_do_list",
   "version": "1.0.0",
-  "description": "<a name=\"readme-top\"></a>",
-  "private": true,
+  "description": "It a simple lists that you need to do and allows you to mark them as complete, and it uses ES6 and Webpack.",
+  "main": "index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
     "watch": "webpack --watch",
@@ -42,6 +42,5 @@
   },
   "dependencies": {
     "lodash": "^4.17.21"
-  },
-  "main": "server.js"
+  }
 }

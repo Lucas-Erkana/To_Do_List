@@ -9,7 +9,7 @@ body {
 
 .container {
   background-color: white;
-  width: 360px;
+  width: 500px;
   margin: 190px auto;
   display: flex;
   flex-direction: column;
@@ -31,7 +31,7 @@ table a {
 }
 
 table td {
-  width: 23.33%;
+  width: 26.33%;
 }
 
 table td .paragraph {
@@ -135,4 +135,11 @@ input::placeholder {
 
 td p {
   margin-left: 0;
+}
+
+.date1 {
+  text-align: end;
+  padding: 20px 100px;
+  font-size: 16px;
+  font-weight: bold;
 }

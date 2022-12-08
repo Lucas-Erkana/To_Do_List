@@ -1,23 +1,48 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-  <meta charset="UTF-8">
-  <meta http-equiv="X-UA-Compatible" content="IE=edge">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <script src="https://kit.fontawesome.com/9c25278351.js"crossorigin="anonymous"></script>
-  <title><%= htmlWebpackPlugin.options.title %></title>
-</head>
-<body>
-  <header>
-  <h1><%= htmlWebpackPlugin.options.title %></h1>
-  </header>
-  <section>
-    <h1 class="date1"></h1>
-  <ul class="todo-list">
-    <li>Today's TO DO test</li>
-    <span class="date1"></span>
-    <li class='list-item'><input class='item-input' id="desc-input" placeholder='Add to your list ...'/></li>
-  </ul>
-</section>
-</body>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title><%= htmlWebpackPlugin.options.title %></title>
+  </head>
+  <body>
+    <main>
+      
+      <div class="container">
+        <span class="date1"></span>
+        <div class="input-container">
+          
+          <p class="mainH">Today's to do </p> 
+          <div>
+            <form action="#">
+              <input
+                id="todo-input"
+                type="text"
+                placeholder="Add to your list"
+                required
+              />
+              <button type="submit" id="addBtn">
+                <img
+                  class="returnImg"
+                  id="returnImg"
+                  src="./assets/return.svg"
+                  alt="returnImg"
+                />
+              </button>
+            </form>
+          </div>
+
+          <div class="to-do-list" id="to-do-container">
+            <table>
+              <thead></thead>
+              <tbody class="tbody" id="tbody"></tbody>
+            </table>
+            <button type="button" id="completedBtn" class="completedBtn">
+              Clear all completed.
+            </button>
+          </div>
+        </div>
+      </div>
+    </main>
+  </body>
 </html>

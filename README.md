@@ -175,9 +175,13 @@ Give a ⭐️ if you like this project!
 <!-- ACKNOWLEDGEMENTS -->
 
 ## 🙏 Acknowledgments <a name="acknowledgements"></a>
-<img src="/images/linkedin.svg" alt="logo" width="18"  height="18" />[Reem Mohamed:linkedIn](https://www.linkedin.com/in/reem-abd-el-fatah-a07543116/)
+Reem Mohamed
+<img src="/images/linkedin.svg" alt="logo" width="18"  height="18" />[linkedIn](https://www.linkedin.com/in/reem-abd-el-fatah-a07543116/)
+<img src="/images/github.svg" alt="logo" width="18"  height="18" />[githubhandle](https://www.linkedin.com/in/reem-abd-el-fatah-a07543116/)
 
-<img src="/images/github.svg" alt="logo" width="18"  height="18" />[Reem Mohamed:githubhandle](https://www.linkedin.com/in/reem-abd-el-fatah-a07543116/)
+Botlhale Katlego Setou
+<img src="/images/linkedin.svg" alt="logo" width="18"  height="18" />[linkedIn](https://www.linkedin.com/in/botlhalesetou/)
+<img src="/images/github.svg" alt="logo" width="18"  height="18" />[githubhandle](https://github.com/Botlhale-Setou)
 
 
 [Font Awesome](https://fontawesome.com/search?q=book&o=r)

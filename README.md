@@ -176,11 +176,15 @@ Give a ⭐️ if you like this project!
 
 ## 🙏 Acknowledgments <a name="acknowledgements"></a>
 Reem Mohamed
+<br>
 <img src="/images/linkedin.svg" alt="logo" width="18"  height="18" />[linkedIn](https://www.linkedin.com/in/reem-abd-el-fatah-a07543116/)
+<br>
 <img src="/images/github.svg" alt="logo" width="18"  height="18" />[githubhandle](https://www.linkedin.com/in/reem-abd-el-fatah-a07543116/)
 
 Botlhale Katlego Setou
+<br>
 <img src="/images/linkedin.svg" alt="logo" width="18"  height="18" />[linkedIn](https://www.linkedin.com/in/botlhalesetou/)
+<br>
 <img src="/images/github.svg" alt="logo" width="18"  height="18" />[githubhandle](https://github.com/Botlhale-Setou)
 
 

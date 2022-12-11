@@ -71,10 +71,13 @@ Here are some features of the page:
 ## 🚀 Live Demo <a name="live-demo"></a>
 
 
-<p>[To Do list-Version 1.4](https://lucash2022.github.io/To_Do_List/dist/versionfinal/)</p>
-<p>[To Do list-Version 1.3](https://lucash2022.github.io/To_Do_List/dist/version1.3/)</p>
-<p>[To Do list-Version 1.2](https://lucash2022.github.io/To_Do_List/dist/version1.2/)</p>
-<p>[To Do list-Version 1.1](https://lucash2022.github.io/To_Do_List/dist/version1.1/)</p>
+[To Do list-Version 1.4](https://lucash2022.github.io/To_Do_List/dist/versionfinal/)
+<br>
+[To Do list-Version 1.3](https://lucash2022.github.io/To_Do_List/dist/version1.3/)
+<br>
+[To Do list-Version 1.2](https://lucash2022.github.io/To_Do_List/dist/version1.2/)
+<br>
+[To Do list-Version 1.1](https://lucash2022.github.io/To_Do_List/dist/version1.1/)
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 

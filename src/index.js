@@ -61,7 +61,6 @@ function renderTodos(){
 
   })
 }
-
 // Form submit step 2
 form.addEventListener('submit', (event) => {
   event.preventDefault();
@@ -72,3 +71,13 @@ form.addEventListener('submit', (event) => {
   todoInput.style.backgroundColor = 'lightgray';
   todoInput.style.borderRadius = "25px";
 });
+
+// CLick event listner for  all the todos
+todosListEl.addEventListener('click', (event) =>{
+  const target = event.target;
+  const parentElement = target.parentNode;
+  if(parentElement.className !== 'todo') return;
+  const todo = parentElement;
+  const todoID = Number(todo.id);
+
+})

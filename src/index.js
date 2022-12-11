@@ -32,7 +32,7 @@ function saveTodo() {
     });
     // clear the input after task is added
     todoInput.value = '';
-    console.log(todos);
+    // console.log(todos);
   }
 }
 

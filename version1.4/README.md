@@ -40,10 +40,10 @@ Project 3:In this project, I will add some functionality to your application to 
 
   </tr>
   <tr style="border: 2px solid black;">
-  <td style="border: 1px solid black;"><img src="/images/DesktopVersionADD.jpg" alt="Desktop Version" width="250"  height="200" /></td>
-  <td style="border: 1px solid black;"><img src="/images/DesktopVersionLIST.jpg" alt="Desktop Version" width="250"  height="200" /></td>
-  <td style="border: 1px solid black;"><img src="/images/DesktopVersionChecked.jpg" alt="Desktop Version" width="250"  height="200" /></td>
-  <td style="border: 1px solid black;"><img src="/images/DesktopVersionDelete.jpg" alt="Desktop Version" width="250"  height="200" /></td>
+  <td style="border: 1px solid black;"><img src="version1.4/images/DesktopVersionADD.jpg" alt="Desktop Version" width="250"  height="200" /></td>
+  <td style="border: 1px solid black;"><img src="version1.4/images/DesktopVersionLIST.jpg" alt="Desktop Version" width="250"  height="200" /></td>
+  <td style="border: 1px solid black;"><img src="version1.4/images/DesktopVersionChecked.jpg" alt="Desktop Version" width="250"  height="200" /></td>
+  <td style="border: 1px solid black;"><img src="version1.4/images/DesktopVersionDelete.jpg" alt="Desktop Version" width="250"  height="200" /></td>
   </tr>
 </table>
 **To-do list**  is a tool that helps to organize your day. It simply lists the things that you need to do and allows you to mark them as complete. You will build a simple website that allows for doing that, and you will do it using ES6 and Webpack! 

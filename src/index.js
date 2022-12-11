@@ -4,7 +4,7 @@ const form = document.getElementById('todoform');
 // Select input on form step 5
 const todoInput = document.getElementById('newtodo');
 // Let variables step 4 cretae array first
-const todos = [];
+let todos = [];
 //add this when adding step 6- area where task are going to be stored
 const todosListEl = document.getElementById('todos-list');
 
@@ -53,14 +53,26 @@ function renderTodos(){
     <i 
       class="bi ${todo.checked ? 'bi-check-circle-fill' : 'bi-circle' }"
       style ="color : ${todo.color} "
-      data-action="check";
+      data-action='check';
       ></i>
-    <p class="" style ="background-color : ${todo.color}" data-action="check">${todo.value}</p>
+    <p class=""  style ="background-color : ${todo.color}" data-action='check' >${todo.value}</p>
     <i class="bi bi-pencil-square" data-action="edit"></i>
     <i class="bi bi-trash" data-action="delete"></i>
   </div>`
 
   })
+}
+//Step 10- Add checkTodo(todoId) funtion
+function checkTodo(todoId){
+  todos = todos.map((todo, index) => ({
+    // value : todo.value,
+    // color : todo.color, both compacted in ...todo
+    ...todo,
+    
+    checked : index === todoId ?  !todo.checked  : todo.checked,
+  }));
+  renderTodos(); // re-render the data
+     
 }
 // Form submit step 2
 form.addEventListener('submit', (event) => {
@@ -73,22 +85,25 @@ form.addEventListener('submit', (event) => {
   todoInput.style.borderRadius = "25px";
 });
 
-// CLick event listner for  all the todos
+
+// Step 7 Click event listner for  all the todos
 todosListEl.addEventListener('click', (event) =>{
   const target = event.target;
   const parentElement = target.parentNode;
+
   if(parentElement.className !== 'todo') return;
 
-  //the id that has been click on
-  const todo = parentElement;
-  const todoID = Number(todo.id); 
+  // Step 8: the id that has been click on
+  let todo = parentElement;
+  const todoId = Number(todo.id); 
+  
 
-  // target action
-  const action = target.dataset.action
-
+  // Step 9: target action
+  const action = target.dataset.action;
   action === "check" && checkTodo(todoId);
+ 
   // action === "edit" && editTodo(todoID);
   // action === "delete" && deleteTodo(todoID);
 
+});
 
-})

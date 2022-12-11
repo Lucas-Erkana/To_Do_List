@@ -71,9 +71,9 @@ Here are some features of the page:
 ## 🚀 Live Demo <a name="live-demo"></a>
 
 
-[To Do list-Version 1.4](https://lucash2022.github.io/To_Do_List/versionfinal/dist/)
+[To Do list-Version 1.4](https://lucash2022.github.io/To_Do_List/version1.4/dist/)
 <br>
-[To Do list-Version 1.4 README](https://lucash2022.github.io/To_Do_List/versionfinal/)
+[To Do list-Version 1.4 README](https://lucash2022.github.io/To_Do_List/version1.4/)
 
 <br>
 [To Do list-Version 1.3](https://lucash2022.github.io/To_Do_List/version1.3/dist/)

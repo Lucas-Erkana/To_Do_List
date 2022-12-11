@@ -1,4 +1,4 @@
-# To Do list: list structure V 1.4<!---Title of Project-->
+# To Do list: list structure Version 1.4<!---Title of Project-->
 <a name="readme-top"></a>
 
 

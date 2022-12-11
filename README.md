@@ -35,12 +35,15 @@ Project 3:In this project, I will add some functionality to your application to 
   <tr>
     <th style="border: 1px solid black;">Empty List</th>
     <th style="border: 1px solid black;">Filled List</th>
+     <th style="border: 1px solid black;">Checked List</th>
      <th style="border: 1px solid black;">Delete List</th>
+
   </tr>
   <tr style="border: 2px solid black;">
-  <td style="border: 1px solid black;"><img src="/images/DesktopVersionADD.jpg" alt="Desktop Version" width="400"  height="200" /></td>
-  <td style="border: 1px solid black;"><img src="/images/DesktopVersionLIST.jpg" alt="Desktop Version" width="400"  height="200" /></td>
-  <td style="border: 1px solid black;"><img src="/images/DesktopVersionDelete.jpg" alt="Desktop Version" width="400"  height="200" /></td>
+  <td style="border: 1px solid black;"><img src="version1.4/images/DesktopVersionADD.jpg" alt="Desktop Version" width="250"  height="200" /></td>
+  <td style="border: 1px solid black;"><img src="version1.4/images/DesktopVersionLIST.jpg" alt="Desktop Version" width="250"  height="200" /></td>
+  <td style="border: 1px solid black;"><img src="version1.4/images/DesctopVersionChecked.jpg" alt="Desktop Version" width="250"  height="200" /></td>
+  <td style="border: 1px solid black;"><img src="version1.4/images/DesctopVersionDelete.jpg" alt="Desktop Version" width="250"  height="200" /></td>
   </tr>
 </table>
 **To-do list**  is a tool that helps to organize your day. It simply lists the things that you need to do and allows you to mark them as complete. You will build a simple website that allows for doing that, and you will do it using ES6 and Webpack! 

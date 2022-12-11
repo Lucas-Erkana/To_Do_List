@@ -4,17 +4,53 @@ const form = document.getElementById('todoform');
 // Select input on form step 5
 const todoInput = document.getElementById('newtodo');
 // Let variables step 4 cretae array first
-let todos = [];
-let EditTodoId = -1;
 // add this when adding step 6- area where task are going to be stored
 const todosListEl = document.getElementById('todos-list');
-//add with step 13
+// add with step 13
 const notificationEl = document.querySelector('.notification');
+let todos = JSON.parse(localStorage.getItem('todos')) || [];
+
+let EditTodoId = -1;
+// Step 13 add shownotification function when error occurs
+function showNotification(msg) {
+  notificationEl.innerHTML = msg;
+  notificationEl.classList.add('notif-enter');
+  setTimeout(() => {
+    notificationEl.classList.remove('notif-enter');
+  }, 2000);
+}
+
+// Step 6- // define renderTodos function
+function renderTodos() {
+  if (todos.length === 0) {
+    todosListEl.innerHTML = '<center>Nothing to do!</center>';
+    showNotification('Nothing to Do');
+    return;
+  }
+  // Clear element before a re-render
+  todosListEl.innerHTML = '';
+  // Render todos
+  todos.forEach((todo, index) => {
+    todosListEl.innerHTML += `
+    <div class="todo" id=${index}>
+    <i 
+      class="bi ${todo.checked ? 'bi-check-circle-fill' : 'bi-circle'}"
+      style ="color : ${todo.color} "
+      data-action='check';
+      ></i>
+    <p class="${todo.checked ? 'checked' : ''} " style ="background-color : ${todo.color}" data-action='check' >${todo.value}</p>
+    <i class="bi bi-pencil-square" data-action="edit"></i>
+    <i class="bi bi-trash" data-action="delete"></i>
+  </div>`;
+  });
+}
 
 todoInput.placeholder = 'type to do here';
 todoInput.style.color = 'black';
 todoInput.style.backgroundColor = 'lightgray';
 todoInput.style.borderRadius = '25px';
+// first render
+renderTodos();
 
 // define SaveTo function do step 3
 function saveTodo() {
@@ -27,15 +63,14 @@ function saveTodo() {
     // check if it empty
     // alert("Todo's is empty")
 
-    //add with step 13
+    // add with step 13
     showNotification("Todo's input is empty!");
   } else if (isDuplicate) {
     // display in console whether there is duplicate value
     // console.log(todoInput.value,' already exist in list')
     // alert('Todo exists');
-    //add with step 13
+    // add with step 13
     showNotification("Todo's input already exists!");
-
   } else {
     // Step 11: add if statement
     if (EditTodoId >= 0) {
@@ -62,25 +97,6 @@ function saveTodo() {
   }
 }
 
-// Step 6- // define renderTodos function
-function renderTodos() {
-  // Clear element before a re-render
-  todosListEl.innerHTML = '';
-  // Render todos
-  todos.forEach((todo, index) => {
-    todosListEl.innerHTML += `
-    <div class="todo" id=${index}>
-    <i 
-      class="bi ${todo.checked ? 'bi-check-circle-fill' : 'bi-circle'}"
-      style ="color : ${todo.color} "
-      data-action='check';
-      ></i>
-    <p class=""  style ="background-color : ${todo.color}" data-action='check' >${todo.value}</p>
-    <i class="bi bi-pencil-square" data-action="edit"></i>
-    <i class="bi bi-trash" data-action="delete"></i>
-  </div>`;
-  });
-}
 // Step 10- Add checkTodo(todoId) funtion
 function checkTodo(todoId) {
   todos = todos.map((todo, index) => ({
@@ -91,6 +107,7 @@ function checkTodo(todoId) {
     checked: index === todoId ? !todo.checked : todo.checked,
   }));
   renderTodos(); // re-render the data
+  localStorage.setItem('todos', JSON.stringify(todos));
 }
 // Step 11- Add editTodo function
 function editTodo(todId) {
@@ -98,21 +115,19 @@ function editTodo(todId) {
   EditTodoId = todId;
 }
 // step 12= add deleteTodo function
-function deleteTodo(todoId){
+function deleteTodo(todoId) {
   todos = todos.filter((todo, index) => index !== todoId);
-  //re-renderTOdos
+  // re-renderTOdos
   EditTodoId = -1;
   renderTodos();
+  localStorage.setItem('todos', JSON.stringify(todos));
 }
 // Form submit step 2
 form.addEventListener('submit', (event) => {
   event.preventDefault();
   saveTodo();
   renderTodos();
-  todoInput.placeholder = 'type next task';
-  todoInput.style.color = 'black';
-  todoInput.style.backgroundColor = 'lightgray';
-  todoInput.style.borderRadius = '25px';
+  localStorage.setItem('todos', JSON.stringify(todos));
 });
 
 // Step 7 Click event listner for  all the todos
@@ -130,14 +145,5 @@ todosListEl.addEventListener('click', (event) => {
   const { action } = target.dataset;
   action === 'check' && checkTodo(todoId);
   action === 'edit' && editTodo(todoId);
-  action === "delete" && deleteTodo(todoId);
+  action === 'delete' && deleteTodo(todoId);
 });
-
-//Step 13 add shownotification function when error occurs
-function showNotification(msg) {
-  notificationEl.innerHTML = msg;
-  notificationEl.classList.add('notif-enter');
-  setTimeout(() => {
-    notificationEl.classList.remove('notif-enter')
-  }, 2000)
-}

@@ -1,8 +1,8 @@
-# To Do list: list structure <!---Title of Project-->
+# To Do list:Version 1.4<!---Title of Project-->
 <a name="readme-top"></a>
 
 
-## To Do list: list structure <!---Title of Project-->
+## To Do list: Final Product <!---Title of Project-->
 
 "To-do list" is a tool that helps to organize your day. It simply lists the things that you need to do and allows you to mark them as complete. You will build a simple website that allows for doing that, and you will do it using ES6 and Webpack!
 
@@ -35,12 +35,15 @@ Project 3:In this project, I will add some functionality to your application to 
   <tr>
     <th style="border: 1px solid black;">Empty List</th>
     <th style="border: 1px solid black;">Filled List</th>
+     <th style="border: 1px solid black;">Checked List</th>
      <th style="border: 1px solid black;">Delete List</th>
+
   </tr>
   <tr style="border: 2px solid black;">
-  <td style="border: 1px solid black;"><img src="/images/DesktopVersionADD.jpg" alt="Desktop Version" width="400"  height="200" /></td>
-  <td style="border: 1px solid black;"><img src="/images/DesktopVersionLIST.jpg" alt="Desktop Version" width="400"  height="200" /></td>
-  <td style="border: 1px solid black;"><img src="/images/DesktopVersionDEL.jpg" alt="Desktop Version" width="400"  height="200" /></td>
+  <td style="border: 1px solid black;"><img src="version1.4/images/DesktopVersionADD.jpg" alt="Desktop Version" width="250"  height="200" /></td>
+  <td style="border: 1px solid black;"><img src="version1.4/images/DesktopVersionLIST.jpg" alt="Desktop Version" width="250"  height="200" /></td>
+  <td style="border: 1px solid black;"><img src="version1.4/images/DesctopVersionChecked.jpg" alt="Desktop Version" width="250"  height="200" /></td>
+  <td style="border: 1px solid black;"><img src="version1.4/images/DesctopVersionDelete.jpg" alt="Desktop Version" width="250"  height="200" /></td>
   </tr>
 </table>
 **To-do list**  is a tool that helps to organize your day. It simply lists the things that you need to do and allows you to mark them as complete. You will build a simple website that allows for doing that, and you will do it using ES6 and Webpack! 
@@ -71,9 +74,23 @@ Here are some features of the page:
 ## 🚀 Live Demo <a name="live-demo"></a>
 
 
-[To Do list-Version 1.4](https://lucash2022.github.io/To_Do_List/versionfinal/dist/)
+
+[To Do list-Version 1.4](https://lucash2022.github.io/To_Do_List/version1.4/dist/)
 <br>
-[To Do list-Version 1.4 README](https://lucash2022.github.io/To_Do_List/versionfinal/)
+[To Do list-Version 1.4 README](https://lucash2022.github.io/To_Do_List/version1.4/)
+<br>
+[To Do list-Version 1.3](https://lucash2022.github.io/To_Do_List/version1.3/dist/)
+<br>
+[To Do list-Version 1.3 README](https://lucash2022.github.io/To_Do_List/version1.3/)
+<br>
+[To Do list-Version 1.2](https://lucash2022.github.io/To_Do_List/version1.2/dist/)
+<br>
+[To Do list-Version 1.2 README](https://lucash2022.github.io/To_Do_List/version1.2/)
+<br>
+[To Do list-Version 1.1](https://lucash2022.github.io/To_Do_List/version1.1/dist/)
+<br>
+[To Do list-Version 1.1 README](https://lucash2022.github.io/To_Do_List/version1.1/)
+
 
 <br>
 [To Do list-Version 1.3](https://lucash2022.github.io/To_Do_List/version1.3/dist/)

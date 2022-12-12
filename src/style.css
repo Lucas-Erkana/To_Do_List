@@ -1,150 +1,157 @@
+@import url('https://fonts.googleapis.com/css2?family=Ubuntu&display=swap');
+
+:root {
+  --container-height: 600px;
+  --contaier-width: 400px;
+  --header-height: 150px;
+}
+
 * {
-  margin: 0;
   padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  font-family: 'Ubuntu', monospace;
 }
 
-body {
-  background-color: #f6f6f6;
-}
-
-.container {
-  background-color: white;
-  width: 500px;
-  margin: 190px auto;
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  padding: 20px;
-}
-
-.to-do-list {
-  width: 100%;
-}
-
-table {
-  width: 100%;
-  background-color: white;
-}
-
-table a {
-  text-decoration: none;
-}
-
-table td {
-  width: 26.33%;
-}
-
-table td .paragraph {
-  color: red;
-}
-
-.strike-through {
-  font-style: italic;
-  text-decoration: line-through;
-}
-
-table td img {
-  width: 30px;
-  margin: auto;
-}
-
-form {
-  display: flex;
-  position: relative;
-}
-
-.completedBtn {
-  width: 100%;
-  height: 40px;
-  border: none;
-  margin-top: 20px;
-  color: rgb(82, 75, 75);
-  cursor: pointer;
-}
-
-button:hover {
-  color: white;
-  background: red;
-}
-
-#addBtn {
-  background-color: white;
-  border: none;
-  position: absolute;
-  left: 320px;
-  height: 40px;
-  margin: auto;
-}
-
-.mainH {
+html {
   font-size: 20px;
 }
 
-.threeDotsImg {
-  opacity: 0.5;
+body {
+  width: 100vw;
+  height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.container {
+  background-color: antiquewhite;
+  width: var(--contaier-width);
+  height: var(--container-height);
+  position: relative;
+  overflow: hidden;
+}
+
+header {
+  width: 100%;
+  height: var(--header-height);
+  background-image: url('./img/bg.jpg');
+  background-size: cover;
+  border-radius: 5px 5px 0 0;
+}
+
+.header {
+  width: 100%;
+  height: 100px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: #fff;
+}
+
+.new-todo {
+  width: 100%;
+  height: 50px;
+  padding: 0.25rem 0;
+}
+
+.new-todo form {
+  display: flex;
+  align-items: center;
+}
+
+.new-todo form input {
+  flex: 1;
+  height: 40px;
+  background-color: transparent;
+  border: none;
+  border-right: 0;
+  outline: transparent;
+  padding-left: 0.5rem;
+  font-size: 1rem;
+  color: #fff;
+}
+
+.new-todo form button {
+  width: 60px;
+  height: 40px;
+  font-size: 1rem;
+  background-color: transparent;
+  color: rgb(255, 247, 0);
+  border: none;
+  border-left: 0;
   cursor: pointer;
 }
 
-#returnImg {
+.new-todo form button:hover {
+  text-shadow: 1px 1px 20px rgba(0, 0, 0, 0.8);
+}
+
+#todos-list {
+  height: calc(var(--container-height) - var(--header-height));
+  background-color: #fff;
+  padding: 0.5rem;
+  border: 1px solid rgb(219, 219, 219);
+  overflow: scroll;
+  border-radius: 0 0 5px 5px;
+}
+
+#todos-list .todo {
+  display: flex;
+  align-items: center;
+  padding: 0.75rem 0.5rem;
+  border-radius: 5px;
+}
+
+#todos-list .todo:hover {
+  background-color: rgba(0, 0, 0, 0.1);
+}
+
+#todos-list .todo * {
   cursor: pointer;
+  margin-right: 0.5rem;
 }
 
-#addBtn img {
-  width: 20px;
+#todos-list .todo i {
+  font-size: 0.9rem;
 }
 
-#todo-input {
-  width: 100%;
-  margin-bottom: 10px;
-  border: none;
-  height: 40px;
+#todos-list .todo p {
+  flex: 1;
+  word-break: break-all;
 }
 
-.clear-completed {
-  width: 100%;
-  height: 40px;
-  border: none;
-  color: rgb(64, 60, 60);
+.checked {
+  text-decoration: line-through;
+  color: grey;
 }
 
-.edit {
-  width: 310px;
-  padding: 0 20px 0 5px;
-  margin: auto;
-  left: -25px;
-  right: 0;
+#todos-list .todo .bi-pencil-square {
+  color: rgb(31, 177, 48);
+}
+
+#todos-list .todo .bi-trash {
+  color: rgb(236, 82, 82);
+  margin: 0;
+}
+
+.notification {
   position: absolute;
-  height: 40px;
-  border: none;
+  width: calc(3 * var(--contaier-width) / 4);
+  height: 60px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  opacity: 0.9;
+  border-radius: 8px;
+  background-color: rgb(233, 81, 81);
+  top: 10px;
+  right: calc(-3 * var(--contaier-width) / 4);
+  color: #fff;
+  transition: 300ms right ease-in-out;
 }
 
-.edit:focus {
-  outline: none;
-}
-
-.hide {
-  display: none;
-}
-
-.editItem {
-  display: none;
-}
-
-input:focus {
-  outline: none;
-}
-
-input::placeholder {
-  font-style: italic;
-}
-
-td p {
-  margin-left: 0;
-}
-
-.date1 {
-  text-align: end;
-  padding: 20px 100px;
-  font-size: 16px;
-  font-weight: bold;
+.notif-enter {
+  right: 10px;
 }

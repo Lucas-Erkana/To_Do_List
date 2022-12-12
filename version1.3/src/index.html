@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title><%= htmlWebpackPlugin.options.title %></title>
+  </head>
+  <body>
+    <main>
+      
+      <div class="container">
+        <span class="date1"></span>
+        <div class="input-container">
+          
+          <p class="mainH">Today's to do </p> 
+          <div>
+            <form action="#">
+              <input
+                id="todo-input"
+                type="text"
+                placeholder="Add to your list"
+                required
+              />
+              <button type="submit" id="addBtn">
+                <img
+                  class="returnImg"
+                  id="returnImg"
+                  src="./assets/return.svg"
+                  alt="returnImg"
+                />
+              </button>
+            </form>
+          </div>
+
+          <div class="to-do-list" id="to-do-container">
+            <table>
+              <thead></thead>
+              <tbody class="tbody" id="tbody"></tbody>
+            </table>
+            <button type="button" id="completedBtn" class="completedBtn">
+              Clear all completed.
+            </button>
+          </div>
+        </div>
+      </div>
+    </main>
+  </body>
+</html>

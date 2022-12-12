@@ -1,8 +1,8 @@
-# To Do list:Version 1.3 <!---Title of Project-->
+# To Do list:Version 1.3<!---Title of Project-->
 <a name="readme-top"></a>
 
 
-## To Do list: list structure <!---Title of Project-->
+## To Do list: Final Product <!---Title of Project-->
 
 "To-do list" is a tool that helps to organize your day. It simply lists the things that you need to do and allows you to mark them as complete. You will build a simple website that allows for doing that, and you will do it using ES6 and Webpack!
 
@@ -10,6 +10,7 @@ Project 1:In this project, I will build a simple HTML list of To Do tasks. The l
 
 Project 2: In this project, I will implement the CRUD (create, read, update, delete) methods. All the elements of the user interface will be fully functional and your application will be completed.
 
+Project 3:In this project, I will add some functionality to your application to make it interactive. The user will also be able to mark task completion by selecting the corresponding checkbox (or undo it by unchecking the checkbox). The updated tasks list will be stored in local storage.
 
 
 <!-- TABLE OF CONTENTS -->
@@ -34,12 +35,15 @@ Project 2: In this project, I will implement the CRUD (create, read, update, del
   <tr>
     <th style="border: 1px solid black;">Empty List</th>
     <th style="border: 1px solid black;">Filled List</th>
+     <th style="border: 1px solid black;">Checked List</th>
      <th style="border: 1px solid black;">Delete List</th>
+
   </tr>
   <tr style="border: 2px solid black;">
-  <td style="border: 1px solid black;"><img src="/images/DesktopVersionADD.jpg" alt="Desktop Version" width="400"  height="200" /></td>
-  <td style="border: 1px solid black;"><img src="/images/DesktopVersionLIST.jpg" alt="Desktop Version" width="400"  height="200" /></td>
-  <td style="border: 1px solid black;"><img src="/images/DesktopVersionDEL.jpg" alt="Desktop Version" width="400"  height="200" /></td>
+  <td style="border: 1px solid black;"><img src="version1.3/images/v3ADD.jpg" alt="Desktop Version" width="250"  height="200" /></td>
+  <td style="border: 1px solid black;"><img src="version1.3/images/v3LIST.jpg" alt="Desktop Version" width="250"  height="200" /></td>
+  <td style="border: 1px solid black;"><img src="version1.3/images/v3CHECKED.jpg" alt="Desktop Version" width="250"  height="200" /></td>
+  <td style="border: 1px solid black;"><img src="version1.3/images/v3DELETE.jpg" alt="Desktop Version" width="250"  height="200" /></td>
   </tr>
 </table>
 **To-do list**  is a tool that helps to organize your day. It simply lists the things that you need to do and allows you to mark them as complete. You will build a simple website that allows for doing that, and you will do it using ES6 and Webpack! 
@@ -48,7 +52,10 @@ Here are some features of the page:
 
 <ul>
   <li>Type content to be added</li>
-  <li>Select items on the list/li>
+  <li>Select items on the list</li>
+   <li>Add items to listt</li>
+   <li>Edit items in list</li>
+  <li>Delete items from list</li>
 </ul>
 
 
@@ -67,7 +74,22 @@ Here are some features of the page:
 ## 🚀 Live Demo <a name="live-demo"></a>
 
 
-[To Do list: list structure](https://lucash2022.github.io/To_Do_List/dist/)
+
+[To Do list-Version 1.4](https://lucash2022.github.io/To_Do_List/version1.4/dist/)
+<br>
+[To Do list-Version 1.4 README](https://github.com/Lucash2022/To_Do_List/tree/main/version1.4/)
+<br>
+[To Do list-Version 1.3](https://lucash2022.github.io/To_Do_List/version1.3/dist/)
+<br>
+[To Do list-Version 1.3 README](https://github.com/Lucash2022/To_Do_List/tree/main/version1.3/)
+<br>
+[To Do list-Version 1.2](https://lucash2022.github.io/To_Do_List/version1.2/dist/)
+<br>
+[To Do list-Version 1.2 README](https://github.com/Lucash2022/To_Do_List/tree/main/version1.2/)
+<br>
+[To Do list-Version 1.1](https://lucash2022.github.io/To_Do_List/version1.1/dist/)
+<br>
+[To Do list-Version 1.1 README](https://github.com/Lucash2022/To_Do_List/tree/main/version1.1/)
 
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
@@ -171,6 +193,18 @@ Give a ⭐️ if you like this project!
 <!-- ACKNOWLEDGEMENTS -->
 
 ## 🙏 Acknowledgments <a name="acknowledgements"></a>
+Reem Mohamed
+<br>
+<img src="/images/linkedin.svg" alt="logo" width="18"  height="18" />[linkedIn](https://www.linkedin.com/in/reem-abd-el-fatah-a07543116/)
+<br>
+<img src="/images/github.svg" alt="logo" width="18"  height="18" />[githubhandle](https://www.linkedin.com/in/reem-abd-el-fatah-a07543116/)
+
+Botlhale Katlego Setou
+<br>
+<img src="/images/linkedin.svg" alt="logo" width="18"  height="18" />[linkedIn](https://www.linkedin.com/in/botlhalesetou/)
+<br>
+<img src="/images/github.svg" alt="logo" width="18"  height="18" />[githubhandle](https://github.com/Botlhale-Setou)
+
 
 [Font Awesome](https://fontawesome.com/search?q=book&o=r)
 

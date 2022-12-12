@@ -30,7 +30,7 @@ Project 3:In this project, I will add some functionality to your application to 
 
 <!-- PROJECT DESCRIPTION -->
 
-# 📖 Project name<a name="about-project"></a> <!---Project title-->
+# 📖 To Do List Structure<a name="about-project"></a> <!---Project title-->
 <table style="border: 2px solid black;">
   <tr>
     <th style="border: 1px solid black;">Empty List</th>

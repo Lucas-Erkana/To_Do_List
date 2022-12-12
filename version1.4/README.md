@@ -84,7 +84,7 @@ Here are some features of the page:
 <br>
 [To Do list-Version 1.2](https://lucash2022.github.io/To_Do_List/version1.2/dist/)
 <br>
-[To Do list-Version 1.2 README]https://github.com/Lucash2022/To_Do_List/tree/main/version1.2)
+[To Do list-Version 1.2 README](https://github.com/Lucash2022/To_Do_List/tree/main/version1.2)
 <br>
 [To Do list-Version 1.1](https://lucash2022.github.io/To_Do_List/version1.1/dist/)
 <br>

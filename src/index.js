@@ -92,6 +92,7 @@ function deleteTodo(todoId) {
 form.addEventListener('submit', (event) => {
   event.preventDefault();
   saveTodo();
+  console.log(todos[3].value);
   renderTodos();
   localStorage.setItem('todos', JSON.stringify(todos));
 });
@@ -106,6 +107,7 @@ todosListEl.addEventListener('click', (event) => {
   const todoId = Number(todo.id);
 
   const { action } = target.dataset;
+  console.log(action);
   if (action === 'check') { checkTodo(todoId); }
   if (action === 'edit') { editTodo(todoId); }
   if (action === 'delete') { deleteTodo(todoId); }

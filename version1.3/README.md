@@ -1,4 +1,4 @@
-# To Do list:Version 1.4<!---Title of Project-->
+# To Do list:Version 1.3<!---Title of Project-->
 <a name="readme-top"></a>
 
 
@@ -40,10 +40,10 @@ Project 3:In this project, I will add some functionality to your application to 
 
   </tr>
   <tr style="border: 2px solid black;">
-  <td style="border: 1px solid black;"><img src="/version1.4/images/DesktopVersionADD.jpg" alt="Desktop Version" width="250"  height="200" /></td>
-  <td style="border: 1px solid black;"><img src="/version1.4/images/DesktopVersionLIST.jpg" alt="Desktop Version" width="250"  height="200" /></td>
-  <td style="border: 1px solid black;"><img src="/version1.4/images/DesctopVersionChecked.jpg" alt="Desktop Version" width="250"  height="200" /></td>
-  <td style="border: 1px solid black;"><img src="/version1.4/images/DesctopVersionDelete.jpg" alt="Desktop Version" width="250"  height="200" /></td>
+  <td style="border: 1px solid black;"><img src="images/v3ADD.jpg" alt="Desktop Version" width="250"  height="200" /></td>
+  <td style="border: 1px solid black;"><img src="images/v3LIST.jpg" alt="Desktop Version" width="250"  height="200" /></td>
+  <td style="border: 1px solid black;"><img src="images/v3CHECKED.jpg" alt="Desktop Version" width="250"  height="200" /></td>
+  <td style="border: 1px solid black;"><img src="images/v3DELETE.jpg" alt="Desktop Version" width="250"  height="200" /></td>
   </tr>
 </table>
 **To-do list**  is a tool that helps to organize your day. It simply lists the things that you need to do and allows you to mark them as complete. You will build a simple website that allows for doing that, and you will do it using ES6 and Webpack! 
@@ -74,6 +74,7 @@ Here are some features of the page:
 ## 🚀 Live Demo <a name="live-demo"></a>
 
 
+
 [To Do list-Version 1.4](https://lucash2022.github.io/To_Do_List/version1.4/dist/)
 <br>
 [To Do list-Version 1.4 README](https://github.com/Lucash2022/To_Do_List/tree/main/version1.4/)
@@ -84,12 +85,11 @@ Here are some features of the page:
 <br>
 [To Do list-Version 1.2](https://lucash2022.github.io/To_Do_List/version1.2/dist/)
 <br>
-[To Do list-Version 1.2 README](https://github.com/Lucash2022/To_Do_List/tree/main/version1.2)
+[To Do list-Version 1.2 README](https://github.com/Lucash2022/To_Do_List/tree/main/version1.2/)
 <br>
 [To Do list-Version 1.1](https://lucash2022.github.io/To_Do_List/version1.1/dist/)
 <br>
-[To Do list-Version 1.1 README](https://github.com/Lucash2022/To_Do_List/tree/main/version1.1)
-
+[To Do list-Version 1.1 README](https://github.com/Lucash2022/To_Do_List/tree/main/version1.1/)
 
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>

@@ -59,6 +59,7 @@ header {
 .new-todo form {
   display: flex;
   align-items: center;
+  margin-top: -20px;
 }
 
 .new-todo form input {
@@ -154,4 +155,9 @@ header {
 
 .notif-enter {
   right: 10px;
+}
+
+.date1 {
+  text-align: right;
+  font-size: 15px;
 }

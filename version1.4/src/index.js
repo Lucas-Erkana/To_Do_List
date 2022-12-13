@@ -1,74 +1,112 @@
 import './style.css';
-// Select element step 1
-const form = document.getElementById('todoform');
-// Select input on form step 5
-const todoInput = document.getElementById('newtodo');
-// Let variables step 4 cretae array first
-const todos = [];
-//add this when adding step 6- area where task are going to be stored
-const todosListEl = document.getElementById('todos-list');
+import {
+  form, todoInput, todosListEl,
+} from './modules/variables.js';
+import showNotification from './modules/notification.js';
+import setTime from './modules/dates.js';
 
-todoInput.placeholder = 'type to do here';
-todoInput.style.color = 'black';
-todoInput.style.backgroundColor = 'lightgray';
-todoInput.style.borderRadius = "25px";
+setTime();
+let todos = JSON.parse(localStorage.getItem('todos')) || [];
+let EditTodoId = -1;
 
-// define SaveTo function do step 3
-function saveTodo() {
-  const todoValue = todoInput.value;
-  // check if the todo is empty
-  const isEmpty = todoValue === '';
-  // check for duplicate values in array
-  const isDuplicate = todos.some((todo) => todo.value.toUpperCase() === todoValue.toUpperCase);
-  if (isEmpty) {
-    // check if it empty
-    // alert("Todo's is empty")
-  } else if (isDuplicate) {
-    // display in console whether there is duplicate value
-    // console.log(todoInput.value,' already exist in list')
-
-  } else {
-    // push task, color and checked object into todos array
-    todos.push({
-      value: todoValue,
-      checked: false,
-      // randomly generate a color
-      color: `#${Math.floor(Math.random() * 16777215).toString(16)}`,
-
-    });
-    // clear the input after task is added
-    todoInput.value = '';
-    // console.log(todos);
+/// define renderTodos function
+function renderTodos() {
+  if (todos.length === 0) {
+    todosListEl.innerHTML = '<br><center>Nothing to do!</center>';
+    showNotification('Nothing to Do');
+    return;
   }
-}
-
-//Step 6- // define renderTodos function
-function renderTodos(){
-  // Clear element before a re-render
   todosListEl.innerHTML = '';
-  // Render todos
   todos.forEach((todo, index) => {
     todosListEl.innerHTML += `
     <div class="todo" id=${index}>
     <i 
-      class="bi ${todo.checked ? 'bi-check-circle-fill' : 'bi-circle' }"
+      class="bi ${todo.checked ? 'bi-check-circle-fill' : 'bi-circle'}"
       style ="color : ${todo.color} "
+      data-action='check';
       ></i>
-    <p class="" style ="background-color : ${todo.color}" >${todo.value}</p>
-    <i class="bi bi-pencil-square"></i>
-    <i class="bi bi-trash"></i>
-  </div>`
-
-  })
+    <p class="${todo.checked ? 'checked' : ''} " style ="background-color : ${todo.color}" data-action='check' >${todo.value}</p>
+    <i class="bi bi-pencil-square" data-action="edit"></i>
+    <i class="bi bi-trash" data-action="delete"></i>
+  </div>`;
+  });
 }
 
-// Form submit step 2
+todoInput.placeholder = 'type to do here';
+todoInput.style.color = 'black';
+todoInput.style.backgroundColor = 'lightgray';
+todoInput.style.borderRadius = '25px';
+renderTodos();
+
+function saveTodo() {
+  const todoValue = todoInput.value;
+  const isEmpty = todoValue === '';
+  const isDuplicate = todos.some((todo) => todo.value.toUpperCase() === todoValue.toUpperCase());
+  if (isEmpty) {
+    showNotification("Todo's input is empty!");
+  } else if (isDuplicate) {
+    showNotification("Todo's input already exists!");
+  } else {
+    // Step 11: add if statement
+    if (EditTodoId >= 0) {
+      todos = todos.map((todo, index) => ({
+        ...todo,
+        value: index === EditTodoId ? todoValue : todo.value,
+      }));
+      EditTodoId = -1;
+    } else {
+      todos.push({
+        value: todoValue,
+        checked: false,
+        color: `#${Math.floor(Math.random() * 16777215).toString(16)}`,
+
+      });
+    }
+    todoInput.value = '';
+  }
+}
+
+function checkTodo(todoId) {
+  todos = todos.map((todo, index) => ({
+    ...todo,
+
+    checked: index === todoId ? !todo.checked : todo.checked,
+  }));
+  renderTodos(); // re-render the data
+  localStorage.setItem('todos', JSON.stringify(todos));
+}
+
+function editTodo(todId) {
+  todoInput.value = todos[todId].value;
+  EditTodoId = todId;
+}
+
+function deleteTodo(todoId) {
+  todos = todos.filter((todo, index) => index !== todoId);
+  // re-renderTOdos
+  EditTodoId = -1;
+  renderTodos();
+  localStorage.setItem('todos', JSON.stringify(todos));
+}
+
 form.addEventListener('submit', (event) => {
   event.preventDefault();
   saveTodo();
   renderTodos();
-  todoInput.placeholder = 'type next task';
-  todoInput.style.color = 'black';
-  todoInput.style.backgroundColor = 'lightgray';
-  todoInput.style.borderRadius = "25px";
+  localStorage.setItem('todos', JSON.stringify(todos));
+});
+
+todosListEl.addEventListener('click', (event) => {
+  const { target } = event;
+  const parentElement = target.parentNode;
+
+  if (parentElement.className !== 'todo') return;
+
+  const todo = parentElement;
+  const todoId = Number(todo.id);
+
+  const { action } = target.dataset;
+  if (action === 'check') { checkTodo(todoId); }
+  if (action === 'edit') { editTodo(todoId); }
+  if (action === 'delete') { deleteTodo(todoId); }
 });

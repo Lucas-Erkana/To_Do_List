@@ -1,15 +1,15 @@
 import './style.css';
 import {
-  form, todoInput, todosListEl,
+  form, todosListEl,
 } from './modules/variables.js';
 import showNotification from './modules/notification.js';
 import setTime from './modules/dates.js';
+import TextBox from './modules/constructor.js';
 
 setTime();
 let todos = JSON.parse(localStorage.getItem('todos')) || [];
 let EditTodoId = -1;
 
-/// define renderTodos function
 function renderTodos() {
   if (todos.length === 0) {
     todosListEl.innerHTML = '<br><center>Nothing to do!</center>';
@@ -31,15 +31,12 @@ function renderTodos() {
   </div>`;
   });
 }
+const todoInput = new TextBox('type to do here', 'black', 'lightgray', '25px', todos);
 
-todoInput.placeholder = 'type to do here';
-todoInput.style.color = 'black';
-todoInput.style.backgroundColor = 'lightgray';
-todoInput.style.borderRadius = '25px';
 renderTodos();
 
 function saveTodo() {
-  const todoValue = todoInput.value;
+  const todoValue = todoInput.node.value;
   const isEmpty = todoValue === '';
   const isDuplicate = todos.some((todo) => todo.value.toUpperCase() === todoValue.toUpperCase());
   if (isEmpty) {
@@ -62,7 +59,7 @@ function saveTodo() {
 
       });
     }
-    todoInput.value = '';
+    todoInput.node.value = '';
   }
 }
 
@@ -72,18 +69,17 @@ function checkTodo(todoId) {
 
     checked: index === todoId ? !todo.checked : todo.checked,
   }));
-  renderTodos(); // re-render the data
+  renderTodos();
   localStorage.setItem('todos', JSON.stringify(todos));
 }
 
 function editTodo(todId) {
-  todoInput.value = todos[todId].value;
+  todoInput.node.value = todos[todId].value;
   EditTodoId = todId;
 }
 
 function deleteTodo(todoId) {
   todos = todos.filter((todo, index) => index !== todoId);
-  // re-renderTOdos
   EditTodoId = -1;
   renderTodos();
   localStorage.setItem('todos', JSON.stringify(todos));
@@ -92,7 +88,6 @@ function deleteTodo(todoId) {
 form.addEventListener('submit', (event) => {
   event.preventDefault();
   saveTodo();
-  console.log(todos[3].value);
   renderTodos();
   localStorage.setItem('todos', JSON.stringify(todos));
 });
@@ -107,7 +102,6 @@ todosListEl.addEventListener('click', (event) => {
   const todoId = Number(todo.id);
 
   const { action } = target.dataset;
-  console.log(action);
   if (action === 'check') { checkTodo(todoId); }
   if (action === 'edit') { editTodo(todoId); }
   if (action === 'delete') { deleteTodo(todoId); }

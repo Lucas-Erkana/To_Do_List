@@ -2,15 +2,15 @@
 <a name="readme-top"></a>
 
 
-## Leadership:  <!---Title of Project-->
+## To Do list: Final Product <!---Title of Project-->
 
-The "Leaderboard" website displays scores submitted by different players. It also allows you to submit your score. All data is preserved thanks to the external Leaderboard API service.
+"To-do list" is a tool that helps to organize your day. It simply lists the things that you need to do and allows you to mark them as complete. You will build a simple website that allows for doing that, and you will do it using ES6 and Webpack!
 
-Project 1: basic page structure.I will build a simple HTML leaderboard. The leaderboard will be styled according to the specifications listed in the lesson. This simple web page will be built using webpack.
+Project 1:In this project, I will build a simple HTML list of To Do tasks. The list will be styled according to the specifications listed later in this lesson. This simple web page will be built using webpack and served by a webpack dev server.
 
-Project 2: send and receive data from API.
+Project 2: In this project, I will implement the CRUD (create, read, update, delete) methods. All the elements of the user interface will be fully functional and your application will be completed.
 
-Project 3:final touches
+Project 3:In this project, I will add some functionality to your application to make it interactive. The user will also be able to mark task completion by selecting the corresponding checkbox (or undo it by unchecking the checkbox). The updated tasks list will be stored in local storage.
 
 
 <!-- TABLE OF CONTENTS -->

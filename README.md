@@ -227,7 +227,7 @@ Botlhale Katlego Setou
 
 ## 📝 License <a name="license"></a>
 
-This project is [MIT](./MIT) licensed.
+This project is [MIT](https://github.com/Lucash2022/To_Do_List/blob/main/MIT.md) licensed.
 
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
